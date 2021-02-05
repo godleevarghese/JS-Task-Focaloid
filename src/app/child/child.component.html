@@ -1,0 +1,6 @@
+<h2>Child Component</h2>
+<p *ngIf="LoggedIn" style="font-size: 16px; font-style: italic;">Welcome to your account</p>
+<p *ngIf="!LoggedIn" style="font-size: 16px; font-style: italic;">Please Login</p>
+<div>
+    <button (click)="callGreet()">Greet</button>
+</div>

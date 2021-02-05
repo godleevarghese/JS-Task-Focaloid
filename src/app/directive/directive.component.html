@@ -1,0 +1,26 @@
+<div>
+    <p *ngIf = "showElement">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam odit deserunt voluptatum, aliquam delectus beatae voluptatem quo reprehenderit ipsa quaerat quam mollitia tenetur corrupti unde soluta modi ratione quia tempora.</p>
+</div>
+<div [ngSwitch]="color">
+    <p *ngSwitchCase="'red'">Red color is shown</p>
+    <p *ngSwitchCase="'blue'">Blue color is shown</p>
+    <p *ngSwitchDefault>Invalid color</p>
+
+</div>
+
+<ul>
+    <li *ngFor="let color of colors">
+
+     {{color}}
+
+    </li>
+</ul>
+<div [ngClass]="result ? 'success' : 'failure'" style="font-size:20px;">
+
+    ngClass checking
+
+</div>
+
+<div [ngStyle]="result ? {'color':'green'}:{'color':'red'}" style="font-size: 20px;">
+ngStyle checking
+</div>

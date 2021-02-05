@@ -1,0 +1,6 @@
+<div>
+    <input [(ngModel)]="test"  type="text">
+    {{test}}
+   <br><br> 
+   <input [(ngModel)]="test" (ngModelChange)="change()"(change)="test1()"  type="text">
+</div>

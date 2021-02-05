@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'focaloid-angular-basics';
+  userLogin = true
+
+  //interpolation
+
+  nameInter = "Godly varghese"
+
+
+  greet(name:string){
+    alert('Hello ' + name)
+  }
 }
