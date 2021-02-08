@@ -8,6 +8,7 @@ import { BindingComponent } from './binding/binding.component';
 import { PipeComponent } from './pipe/pipe.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { CustomDirective } from './custom.directive';
+import { CustomPipe } from './custom.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CustomDirective } from './custom.directive';
     BindingComponent,
     PipeComponent,
     DirectiveComponent,
-    CustomDirective
+    CustomDirective,
+    CustomPipe
   ],
   imports: [
     BrowserModule,

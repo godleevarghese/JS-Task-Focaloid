@@ -6,10 +6,10 @@ import { Directive, ElementRef} from '@angular/core';
 })
 export class CustomDirective {
 
-  constructor(private el:ElementRef) { 
+  constructor(public el:ElementRef) { 
 
     el.nativeElement.style.textColor="white"
-    el.nativeElement.style.backgroundColor="blue"
+    el.nativeElement.style.backgroundColor="yellow"
 
   }
 
