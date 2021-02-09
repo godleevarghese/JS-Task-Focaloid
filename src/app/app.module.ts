@@ -9,6 +9,9 @@ import { PipeComponent } from './pipe/pipe.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { CustomDirective } from './custom.directive';
 import { CustomPipe } from './custom.pipe';
+import {HttpClientModule} from '@angular/common/http';
+import { HttpSubscribeComponent } from './http-subscribe/http-subscribe.component'
+import { HttpService } from './http.service';
 
 @NgModule({
   declarations: [
@@ -18,14 +21,16 @@ import { CustomPipe } from './custom.pipe';
     PipeComponent,
     DirectiveComponent,
     CustomDirective,
-    CustomPipe
+    CustomPipe,
+    HttpSubscribeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
