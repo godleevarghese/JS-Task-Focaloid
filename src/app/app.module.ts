@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule,routerComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChildComponent } from './child/child.component';
 import { BindingComponent } from './binding/binding.component';
@@ -13,6 +13,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { HttpSubscribeComponent } from './http-subscribe/http-subscribe.component'
 import { HttpService } from './http.service';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { HttpService } from './http.service';
     DirectiveComponent,
     CustomDirective,
     CustomPipe,
-    HttpSubscribeComponent
+    HttpSubscribeComponent,
+    routerComponents
   ],
   imports: [
     BrowserModule,
